@@ -38,6 +38,12 @@ h1 {
     }
 }
 
+@media (min-width: 990px){
+    .main-header {
+
+    }
+}
+
 .play {
     display: flex;
     flex-direction: column;
@@ -47,6 +53,14 @@ h1 {
     .play {
         justify-content: center;
         align-items: center;
+        width: 100%;
+        justify-self: center;
+    }
+}
+
+@media (min-width: 990px) {
+    .play {
+
     }
 }
 
@@ -100,15 +114,31 @@ h1 {
     margin-bottom: 1.4em;
 }
 
+.nav ul {
+    display: flex;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    top: 2em;
+    right: 2.8em;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
 .nav li {
     display: none;
 }
 
 @media (min-width: 556px) {
     .nav li {
-        width: 100%;
         display: inline-block;
-        align-self: flex-end;
+        width: 18%;
+    }
+}
+
+@media (min-width: 990px) {
+    .nav li {
+
     }
 }
 
@@ -281,6 +311,7 @@ h1 {
 
 .pine-cone img {
     max-width: 105%;
+    height: 300px;
     height: auto;
     z-index: 0;
 }
@@ -297,7 +328,7 @@ h1 {
     margin-top: -50px;
 }
 
-.coupon h2 {
+.coupon-text h2 {
     font-weight: 300;
     font-size: 22px;
     color: #999;
@@ -306,24 +337,28 @@ h1 {
     margin-bottom: -.4em;
 }
 
-@media (min-width: 556px) {
-    .coupon h2 {
+@media (min-width: 450px) {
+    .coupon-text h2 {
         text-align: left;
         margin-left: 2em;
+        max-width: 45%;
+        margin-bottom: 10em;
+        margin-top: -300px;
     }
 }
 
-.coupon h4 {
+.coupon-text h4 {
     font-weight: 400;
     font-size: 22px;
     color: #666;
 }
 
-@media (min-width: 555px) {
-    .coupon h4 {
+@media (min-width: 450px) {
+    .coupon-text h4 {
         text-align: left;
         margin-left: 2em;
-        margin-bottom: 2em;
+        margin-bottom: 7em;
+        margin-top: -200px;
     }
 }
 
@@ -344,6 +379,13 @@ h1 {
         width: 60%;
         font-size: 14px;
         margin-top: 2em;
+    }
+}
+
+@media (min-width: 599px) {
+    .coupon a {
+        margin-left: -21.5em;
+        width: 35%;
     }
 }
 
